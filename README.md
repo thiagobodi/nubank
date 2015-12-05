@@ -26,6 +26,6 @@ Anode --|
 All virtual machines starts with 2 interfaces: 1 nat and 1 hostonly. To facilitate the work, I used a routing/filter (iptables) solution.
 For the first test (Anode in GUEST network), use the Vagrantfile as downloaded. Run Vagrantfile and execute in each node: /tmp/test.sh (the results will appear in /tmp/test.out)
 
-For the second test  (Anode in INTRANET network), comment the TEST 1 block (in Vagrantfile) and uncomment TEST 2 block, rerun Vagrant and run test.sh again (the results will appear in /tmp/test.out)
+For the second test  (Anode in INTRANET network), comment all TEST 1 blocks (in Vagrantfile) and uncomment TEST 2 blocks, rerun Vagrant and run test.sh again (the results will appear in /tmp/test.out)
 
 Unfortunately, the Vagrant need more configurations to work with both networks and that's a working in progress in community (https://github.com/mitchellh/vagrant/issues/5524).
