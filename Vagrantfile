@@ -99,8 +99,12 @@ SCRIPTE
   config.vm.define "anode" do |anode|
     anode.vm.hostname = "anode"
     anode.vm.box = "puphpet/centos65-x64"
+######TEST 1
     anode.vm.network "private_network",ip: "192.168.10.101"
-
+######
+######TEST 2
+#    anode.vm.network "private_network",ip: "192.168.10.101"
+######
     anode.vm.provision "shell", inline: $config_script_A  
     anode.vm.provision "shell", inline: $config_hosts_file 
     anode.vm.provision "shell", inline: $config_test
