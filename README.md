@@ -22,7 +22,7 @@ Anode --|
         \ intranet ->    Cnode (192.168.11.2) (internet gateway) INTRANET
                       Dnode (192.168.11.103)
 
-
+ 
 All virtual machines starts with 2 interfaces: 1 nat and 1 hostonly. To facilitate the work, I used a routing/filter (iptables) solution.
 For the first test (Anode in GUEST network), use the Vagrantfile as downloaded. Run Vagrantfile and execute in each node: /tmp/test.sh (the results will appear in /tmp/test.out)
 
